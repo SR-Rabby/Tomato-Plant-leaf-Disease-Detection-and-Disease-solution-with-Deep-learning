@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Css for Home page start*/
+.background{
+    background: url(../images/toto.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar{
+    height: 80px;
+    width: 100%;
+    /*background: rgba(154,205,50,0.4);*/
+    background: rgba(0,0,0,0.9);
+}
+
+.logo{
+    height: 100px;
+    width: 120px;
+    border-radius: 20px;
+}
+
+.navbar ul{
+    float: right;
+    margin-right: 30px;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin: 0 15px;
+    display: inline-block;
+    line-height: 80px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: rgba(255,255,255, 1.0);
+    font-size: 22px;
+    font-family: cursive;
+    padding: 8px 12px;
+    transition: .2s;
+}
+
+.navbar ul li a:hover{
+    background: rgba(154,205,50, 1.0);
+    color: rgba(0, 0, 0, 1.0);
+    border-radius: 25px;
+}
+
+.title_position{
+    position: absolute;
+    top: 25%;
+    left: 53%;
+    right: 7%;
+    text-align: center;
+    border: 5px solid greenyellow;
+    border-radius: 25px;
+    background: rgba(0,100,0,0.7);
+}
+.title{
+    
+    /*color: rgba(255,255,255, 1.0);*/
+    color: rgba(255, 0, 0, 0.9);
+    font-size: 55px;
+    font-family: cursive;
+    padding: 0 10px;
+}
+#p_position{
+    
+    padding: 10px;
+    color: rgba(255,255,255, 1.0);
+    font-size: 25px;
+    font-family: cursive;
+
+}
+
+#Know_more{
+    font-size: 25px;
+    font-family: cursive;
+    position: absolute;
+    color: rgba(255,255,255, 1.0);
+    text-align: center;
+    top: 60%;
+    left: 53%;
+    right: 7%;  
+}
+#p_border{
+    font-weight: bold;
+}
+.button button{
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(0,0,0, 1.0);
+    background: rgba(154,205,50, 1.0);
+    cursor: pointer;
+    border-radius: 25px;
+}
+.button button:hover{
+    color: rgba(255,255,255, 1.0);
+    background: rgba(0,100,0,0.7);
+}
+
+/*Css for Home page finish*/
+/*ffffffffffffffffffffffffffffffffffffffffffffffff*/
+/*Css for About us start*/
+
+.backcolor{
+    height: 100vh;
+    width: 100%;
+    background: rgba(255,255,255, 1.0);
+    font-family: cursive;
+    }
+
+#div{ /*description of avout us below*/
+    font-size: 30px;
+    color: rgba(0,0,0, 1.0);
+    position: absolute;
+    width: 100%;
+    top: 15%;
+    text-align: center;
+}  
+.center {
+    
+    margin-top: 145px;
+    text-align: center;
+    width: 100%;
+   background: rgba(225,225,225,0.6);
+}
+
+.pad {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+
+}
+
+#h1 {     /*About Us*/
+    font-size: 42px;
+    color: rgba(255,255,255, 1.0);
+    position: absolute;
+    top: 12%;
+    left: 43%;
+    background: rgba(0,100,0,0.7);
+}
+
+#our_intro td{
+    font-weight: bold;
+}
+
+/*Css for About us finish*/
+/*ffffffffffffffffffffffffffffffffffffffffffffffff*/
+
+
+
+/*ffffffffffffffffffffffffffffffffffffffffffffffff*/
+/*Want to know more? start*/
+
+.lear_nmore_tbl{
+    width: 100%;
+    text-align: left;
+}
+
+.lear_nmore_tbl tr td div h3{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.lear_nmore_tbl tr td p{
+
+}
+
+
+/*Want to know more? finish*/
+/*ffffffffffffffffffffffffffffffffffffffffffffffff*/
+
+
+.img-preview {
+    width: 256px;
+    height: 256px;
+    position: relative;
+    border: 5px solid #F8F8F8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 1em;
+    margin-bottom: 1em;    
+}
+
+.img-preview>div {
+    width: 100%;
+    height: 100%;
+    background-size: 256px 256px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.upload-label{
+    display: inline-block;
+    padding: 12px 30px;
+    background: #39D2B4;
+    color: #greenyellow;
+    font-size: 1em;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.upload-label:hover{
+    background: #34495E;
+    color: #39D2B4;
+}
+
+.loader {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

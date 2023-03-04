@@ -1,0 +1,237 @@
+<html>
+<head>
+<style>
+* {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+
+        }
+
+     
+
+        form {
+            display: flex;
+            height: 85vh;
+            justify-content: center;
+            align-items: center;
+            margin-top: -150px;
+            width: 60%;
+            text-align: center;
+			margin-left:300px;
+            
+        }
+
+
+        .details h2 {
+            
+            position: relative;
+            top: 100px;
+            margin: auto;
+            color: rgb(18, 231, 231);
+            font-size: 3rem;
+        }
+
+        label:hover {
+            transform: scale(1.03);
+        }
+
+        .details h2 {
+            /* margin-bottom: 300px; */
+            position: relative;
+            top: 100px;
+            margin: auto;
+            color: rgb(18, 231, 231);
+            font-size: 3rem;
+
+        }
+
+      
+
+
+        .details h1 {
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: rgb(8, 8, 8);
+        }
+
+
+        .upload {
+
+            font-size: 20px;
+            background-color: rgb(255, 252, 252);
+            border-radius: 20px;
+            outline: none;
+            width: 500px;
+            color: rgb(0, 0, 0);
+            border: 3px solid rgb(45, 47, 49);
+
+
+
+        }
+
+        ::-webkit-file-upload-button {
+            color: rgb(255, 252, 252);
+            padding: 20px;
+            border: 2px solid rgb(201, 6, 6);
+            background-color: rgb(201, 6, 6);
+            border-radius: 15px;
+
+        }
+
+        ::-webkit-file-upload-button:hover {
+            border-radius: 20px;
+            border: 2px solid rgb(177, 174, 174);
+
+
+        }
+
+
+
+        input[type="submit"] {
+            position: absolute;
+            margin-top: 200px;
+            padding: 15px 35px;
+            background-color: rgb(31, 185, 190);
+            border-radius: 15px;
+            color: black;
+            font-size: 1.5rem;
+            border: 4px solid rgb(31, 185, 190);
+        }
+        .navbar{
+    height: 80px;
+    width: 100%;
+    /*background: rgba(154,205,50,0.4);*/
+    background: rgba(0,0,0,0.9);
+}
+
+.logo{
+    height: 100px;
+    width: 120px;
+    border-radius: 20px;
+}
+
+.navbar ul{
+    float: right;
+    margin-right: 30px;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin: 0 15px;
+    display: inline-block;
+    line-height: 80px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: rgba(255,255,255, 1.0);
+    font-size: 22px;
+    font-family: cursive;
+    padding: 8px 12px;
+    transition: .2s;
+}
+
+.navbar ul li a:hover{
+    background: rgba(154,205,50, 1.0);
+    color: rgba(0, 0, 0, 1.0);
+    border-radius: 25px;
+}
+
+.title_position{
+    position: absolute;
+    top: 25%;
+    left: 53%;
+    right: 7%;
+    text-align: center;
+    border: 5px solid greenyellow;
+    border-radius: 25px;
+    background: rgba(0,100,0,0.7);
+}
+.title{
+    
+    /*color: rgba(255,255,255, 1.0);*/
+    color: rgba(255, 0, 0, 0.9);
+    font-size: 55px;
+    font-family: cursive;
+    padding: 0 10px;
+}
+#p_position{
+    
+    padding: 10px;
+    color: rgba(255,255,255, 1.0);
+    font-size: 25px;
+    font-family: cursive;
+
+}
+
+#Know_more{
+    font-size: 25px;
+    font-family: cursive;
+    position: absolute;
+    color: rgba(255,255,255, 1.0);
+    text-align: center;
+    top: 60%;
+    left: 53%;
+    right: 7%;  
+}
+#p_border{
+    font-weight: bold;
+}
+.button button{
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(0,0,0, 1.0);
+    background: rgba(154,205,50, 1.0);
+    cursor: pointer;
+    border-radius: 25px;
+}
+.button button:hover{
+    color: rgba(255,255,255, 1.0);
+    background: rgba(0,100,0,0.7);
+}
+body{
+			background-color: rgba(50, 115, 220);
+		}
+</style>
+</head>
+<body background="{{url_for('static',filename = 'images/covah.jpg')}}" style="background-size: cover; height: 100vh; width: 100%;">
+
+    <nav class="navbar">
+           
+
+            <ul>
+                <li><a href="{{url_for('home') }}">Main</a></li>
+                <li><a href="{{url_for('index') }}">Predict</a></li>
+                <li><a href="{{url_for('about') }}">About</a></li>
+                
+            </ul>
+
+        </nav>
+            <div class="title_position">
+            <h1 class="title">
+                Tomato Leaf Disease
+            </h1>
+           
+        </div>
+
+
+        <div>
+
+            <form action="/predict" method="post" enctype="multipart/form-data" onsubmit="showloading()" style="padding-top: 400px;">
+
+                <input type="file" name="image" class="upload">
+				<br>
+				<br>
+                <input type="submit" value="Scan">
+
+            </form>
+        </div>
+    <div style="padding-left: 89%;"><img src="../static/images/bubt.png" width="180px" height="30px"></div>
+
+</body>
+</html>

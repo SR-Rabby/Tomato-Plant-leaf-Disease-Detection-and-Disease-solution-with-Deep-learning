@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Main page</title>
+	<link rel="stylesheet" type="text/css" href="../static/css/main.css">
+</head>
+<body>
+	<div class="background">
+
+		<nav class="navbar">
+		
+
+		  <ul>
+                <li><a href="{{url_for('home') }}">Main</a></li>
+                <li><a href="{{url_for('index') }}">Predict</a></li>
+                <li><a href="{{url_for('about') }}">About</a></li>
+                
+            </ul>
+
+		</nav>
+
+		<div class="title_position">
+			<h1 class="title">
+				Welcome to Our Project
+			</h1>
+			<p id="p_position">
+				Tomato leaf diseases detect 
+			</p>
+		</div>
+
+	</div>
+
+</body>
+</html>
